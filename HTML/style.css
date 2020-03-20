@@ -1,5 +1,7 @@
 table {
     width:60%;
+    margin-left:auto;
+    margin-right:auto;
   }
   table, th, td {
     border: 1px solid black;
@@ -25,4 +27,7 @@ table {
   .presentation{
     font-size: 30px;
 
+  }
+  h1{
+    text-align:center;
   }
