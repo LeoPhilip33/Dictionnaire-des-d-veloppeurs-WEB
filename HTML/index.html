@@ -46,7 +46,7 @@
             <tr>
                 <td class="presentation">&lt;audio&gt;  &lt;/audio&gt;</td>
                 <td><audio controls>
-                    <source src="../audio/ouch.mp3" >
+                    <source src="../audio/ouch.mp3">
                 </audio></td>  <!-- Mettre un audio -->
             </tr>
             <tr>
@@ -59,12 +59,100 @@
                 <a href="CV/CV.html">leophilip.com</a></td>  <!-- Mettre une url en url de base sans avoir besoin de la réécrire-->
             </tr>
             <tr>
+                <td class="presentation">&lt;bdo&gt; &lt;/bdo&gt;</td>
+                <td><bdo dir="rtl">Le texte est écrit de la droite vers la gauche</bdo><br>Le texte est écrit de la droite vers la gauche</td> <!-- sens décriture changé -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;blockquote&gt; &lt;/blockquote&gt;</td>
+                <td><p>D'après le site wordreference:</p>
+                <blockquote cite="https://www.wordreference.com/fren/monde">Le mot "Monde" s'écrit "Word" en français</blockquote></td> <!-- saut de lignes -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;body&gt; &lt;/body&gt;</td>
+                <td><p>Contiet le corps de la page.</p></td> <!-- C'est le corps de la page -->
+            </tr>
+            <tr>
                 <td class="presentation">&lt;br&gt;</td>
                 <td>Voici le début de la phrase <br> et voici la fin</td> <!-- saut de lignes -->
             </tr>
             <tr>
+                <td class="presentation">&lt;button&gt; &lt;/button&gt;</td>
+                <td><button type="button" onclick="alert('Vous avez cliqué sur le boutton')">Cliquez ici!</button></td> <!-- créer un boutton -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;caption&gt; &lt;/caption&gt;</td>
+                <td><table>
+                    <caption>Légende du tableau</caption>
+                    <tr>
+                      <th>x</th>
+                      <th>y</th>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>75</td>
+                    </tr>
+                  </table></td> <!-- légender un tableau -->
+            </tr>
+            <tr>
                 <td class="presentation">&lt;center&gt;  &lt;/center&gt;</td>
                 <td><p>Voici un texte <b>centré</b></p></td> <!-- centrer texte-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;cite&gt;  &lt;/cite&gt;</td>
+                <td><p><cite>La Joconde</cite> par Léonard de Vinci en 1503</p></td> <!-- cite le titre d'une oeuvre-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;data&gt;  &lt;/data&gt;</td>
+                <td><p><data value="78563">Attribution d'une valeur à un text</data></p></td> <!-- donner une valeur a un text-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;datalist&gt;  &lt;/datalist&gt;</td>
+                <td>
+                    <form action="/action_page.php" method="get">
+                        <input list="Valeurs" name="browser">
+                        <datalist id="Valeurs">
+                          <option value="Valeur 1">
+                          <option value="Valeur 2">
+                          <option value="Valeur 3">
+                          <option value="Valeur 4">
+                          <option value="Valeur 5">
+                        </datalist>
+                        <input type="submit">
+                      </form>
+                </td> <!-- créer une list de valeur-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;dd&gt;  &lt;/dd&gt;</td>
+                <td>
+                    <dl>
+                        <dt>Onepiece</dt>
+                        <dd>Meilleur mange/animé</dd><br>
+                        <dt>France</dt>
+                        <dd>Tout le monde est en quarantaine</dd>
+                      </dl>
+                </td> <!-- description dans un dl-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;del&gt;  &lt;/del&gt;</td>
+                <td>Voici du text <del>barré</del></td> <!-- Barre du text-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;details&gt;  &lt;/details&gt;</td>
+                <td>
+                    <details>
+                        <summary>Afficher/Cacher</summary><br>
+                        <p>Premier paragaphe</p>
+                        <p>Deuxième paragraphe</p>
+                      </details>
+                </td> <!-- Afficher ou cacher du text-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;dialog&gt;  &lt;/dialog&gt;</td>
+                <td><dialog open>This is an open dialog window</dialog></td> <!-- boite de dialogue-->
             </tr>
             <tr>
                 <td class="presentation">&lt;em&gt;  &lt;/em&gt;</td>
@@ -98,28 +186,6 @@
                 <td class="presentation">&lt;i&gt;  &lt;/i&gt;</td>
                 <td><i>Voici un text en italique</i></td> <!-- text en italique-->
             </tr>
-
-            <tr>
-                <td class="presentation">&lt;h5&gt;  &lt;/h5&gt;</td>
-                <td><h5>Voici le titre H5</h5></td>
-            </tr>
-            <tr>
-                <td class="presentation">&lt;h5&gt;  &lt;/h5&gt;</td>
-                <td><h5>Voici le titre H5</h5></td>
-            </tr>
-            <tr>
-                <td class="presentation">&lt;h5&gt;  &lt;/h5&gt;</td>
-                <td><h5>Voici le titre H5</h5></td>
-            </tr>
-            <tr>
-                <td class="presentation">&lt;h5&gt;  &lt;/h5&gt;</td>
-                <td><h5>Voici le titre H5</h5></td>
-            </tr>
-            <tr>
-                <td class="presentation">&lt;h5&gt;  &lt;/h5&gt;</td>
-                <td><h5>Voici le titre H5</h5></td>
-            </tr>
-
         </table>
 
         <footer>
