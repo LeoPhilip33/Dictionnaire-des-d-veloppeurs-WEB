@@ -4,6 +4,10 @@
         <title>Dictionnaire des développeurs WEB</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="all" />
         <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <h1> Les balises les plus importantes de l'HTML </h1>
@@ -51,7 +55,7 @@
             </tr>
             <tr>
                 <td class="presentation">&lt;base&gt;</td>
-                <td><base href="https://leophilip.com/">Lien vers le CV du site: 
+                <td><a href="https://leophilip.com/">Lien vers le CV du site: <!-- <base href="https://leophilip.com/"> -->
                 <a href="CV/CV.html">leophilip.com</a></td>  <!-- Mettre une url en url de base sans avoir besoin de la réécrire-->
             </tr>
             <tr>
@@ -120,11 +124,26 @@
 
         <footer>
             <div class="box">
-                <div>A propos de nous</div>
-                <div>Mentions légales</div>
-                <div>Contact</div>
+                <div><a class="unstyle" href="">A propos de nous </a></div>
+                <div><a type="button" class="unstyle" data-toggle="modal" data-target="#myModal">Mentions légales</a></div>
+                <div><a class="unstyle" href="">Contact </a></div>
               </div>
         </footer>
-        
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mentions légales</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Blablabla pookie</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
