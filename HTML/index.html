@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td class="presentation">&lt;body&gt; &lt;/body&gt;</td>
-                <td><p>Contiet le corps de la page.</p></td> <!-- C'est le corps de la page -->
+                <td><p>Contient le corps de la page.</p></td> <!-- C'est le corps de la page -->
             </tr>
             <tr>
                 <td class="presentation">&lt;br&gt;</td>
@@ -123,7 +123,7 @@
                         </datalist>
                         <input type="submit">
                       </form>
-                </td> <!-- créer une list de valeur-->
+                </td> <!-- créée une list de valeur-->
             </tr>
             <tr>
                 <td class="presentation">&lt;dd&gt;  &lt;/dd&gt;</td>
@@ -141,7 +141,7 @@
                 <td>Voici du text <del>barré</del></td> <!-- Barre du text-->
             </tr>
             <tr>
-                <td class="presentation">&lt;details&gt;  &lt;/details&gt;</td>
+                <td class="presentation">&lt;details&gt;  &lt;/details&gt; &lt;summary&gt;  &lt;/summary&gt;</td>
                 <td>
                     <details>
                         <summary>Afficher/Cacher</summary><br>
@@ -289,7 +289,7 @@
                    </form></td> <!-- Legend une form-->
             </tr>
             <tr>
-                <td class="presentation">&lt;li&gt;  &lt;/li&gt;</td>
+                <td class="presentation">&lt;li&gt;  &lt;/li&gt; &lt;ul&gt;  &lt;/ul&gt;</td>
                 <td><ul>
                     <li>Premier élément de la liste</li>
                     <li>Deuxième élément de la liste</li>
@@ -299,6 +299,221 @@
             <tr>
                 <td class="presentation">&lt;link&gt;</td>
                 <td>Sert à relier un fichier à un autre dans la balise &lt;head&gt;.</td> <!-- Ajout de ligne dans une liste-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;map&gt; &lt;/map&gt;</td>
+                <td><p>Cliquez sur le nom de l'artiste pour accéder à son contenu.</p> <img src="../images/isoka.jpg" height="30%" width="30%" usemap="#isoka">
+                <map name="isoka">
+                    <area shape="rect" coords="0,30,100,0" href="https://www.instagram.com/jacobnobleart/" target="_blank">
+                </map></td> <!-- zone cliquable sur une image-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;mark&gt; &lt;/mark&gt;</td>
+                <td>Ce <mark>mot</mark> est surligné.</td> <!-- Surligne un text-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;meta&gt;</td>
+                <td>Sert à indiquer les métadonnées dans la balise &lt;head&gt;</td> <!-- meta data-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;meter&gt;</td>
+                <td>Sert à créée des jauges comme celle-ci:
+                    <meter value="223" min="0" max="1000">
+                </td> <!-- Création de jauges-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;nav&gt; &lt;/nav&gt;</td>
+                <td><nav>
+                    <a>Accueil /</a>
+                    <a>Galerie /</a>
+                    <a>À propos</a>
+                </nav>
+                </td> <!-- Création de nav bar-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;noscript&gt; &lt;/noscript&gt;</td>
+                <td><script>document.write("Votre navigateur supporte les scripts Java")</script>
+                    <noscript>Votre navigateur ne supporte pas les scripts Java</noscript>
+                </td> <!-- Ecrit un message si le navigateur ne supporte pas les scripts java-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;object&gt; &lt;/object&gt;</td>
+                <td><object width="210%" height="210%" src="../images/whitebird1.swf">Flash Element</object></td> <!-- modifie un élement flash player, fait la même chose que la balise <embed>-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;ol&gt; &lt;/ol&gt;</td>
+                <td><ol>
+                    <li>Premier élément</li>
+                    <li>Deuxième élement</li>
+                </ol>
+                <ol start="1953">
+                    <li>Element 1953</li>
+                    <li>Element 1954</li>
+                </ol></td> <!-- créée une liste numérotée-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;optgroup&gt; &lt;/optgroup&gt; &lt;option&gt; &lt;/option&gt;</td>
+                <td><label for="manga">Liste de Manga:</label>
+                <select id="manga">
+                        <option value="chose">Choisi</option>
+                    <optgroup label="Shonen">     
+                        <option value="onepiece">One Piece</option>
+                        <option value="bleach">Bleach</option>
+                    </optgroup>
+                    <optgroup label="Seinen">
+                        <option value="yourname">Your Name</option>
+                        <option value="claymore">Claymore</option>
+                    </optgroup>
+                </select></td> <!-- créée des sections dans une liste-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;output&gt; &lt;/output&gt;</td>
+                <td><form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="a" value="100">
+                    +<input type="number" id="b" value="100">
+                    =<output name="x" for="a b"></output>
+                    </form>
+                </td> <!-- Affiche un résultat de form-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;p&gt; &lt;/p&gt;</td>
+                <td><p>Ceci est un paragraphe.</p></td> <!-- Affiche un paragraphe-->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;picture&gt; &lt;/picture&gt;</td>
+                <td><picture>
+                    <source media="(min-width: 1900px)" srcset="../images/hisoka.png">
+                    <img src="../images/isoka.jpg" width="30%" height="30%">
+                  </picture></td> <!-- permet d'afficher une image différente suivant la taille de la fenetre -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;pre&gt; &lt;/pre&gt;</td>
+                <td><pre>
+                    Affiche
+                    le text
+                    de la même forme
+                    que dans le code
+                  </pre></td> <!-- affiche le text de la meme façon que dans le code -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;progress&gt;</td>
+                <td>Affiche une barre de progression: <progress value="50" min="0" max="100"></td> <!-- meme chose que <meter> -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;q&gt; &lt;/q&gt;</td>
+                <td>Créer ceci: <q></q> .</td> <!-- sert a rien -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;rp&gt; &lt;/rp&gt; &lt;rt&gt; &lt;/rt&gt;</td>
+                <td><ruby>
+                    <rt><rp>ERROR</rp>Sert à remplacer des éléments que le navigateur ne peut afficher.</rt>
+                </ruby></td> <!-- remplace éléments que le navigateur prends pas en charge -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;s&gt; &lt;/s&gt;</td>
+                <td>Voici du text barré: <s>TEXT</s></td> <!-- barre du text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;samp&gt; &lt;/samp&gt;</td>
+                <td>Voici le même text que le reste de cette page Web | <samp>Voici du text sans changement</samp></td> <!-- écrit du text type document -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;script&gt; &lt;/script&gt;</td>
+                <td><script>document.write("Voici un exemple de script Java.")</script></td> <!-- scripts java -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;section&gt; &lt;/section&gt;</td>
+                <td>Créée des sections sur une page Web.<br>
+                    Exemple de sections:
+                    <section><h4>Première section</h4>
+                    <p>Element de la première section.</p></section>
+                    <section><h4>Deuxième section</h4>
+                    <p>Elements de la deuxième section.</p></section></td> <!-- créée des sections -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;select&gt; &lt;/select&gt;</td>
+                <td><select id="exemple">
+                    <option value="exemple1">Element 1</option>
+                    <option value="exemple2">Element 2</option>
+                    <option value="exemple3">Element 3</option>
+                </select></td> <!-- créée une liste selectionnable -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;small&gt; &lt;/small&gt;</td>
+                <td>Voici un mot plus petit: <small>exemple</small>.</td> <!-- text plus petit -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;source&gt;</td>
+                <td>Ajoute une source vidéo, audio ou image:
+                   <audio controls><source src="../audio/ouch.mp3"></audio>
+                </td> <!-- ajoute une source -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;span&gt; &lt;/span&gt;</td>
+                <td>Le style de ce mot: <span style="font-size:2em">grand</span> est changé.
+                </td> <!-- change le style du text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;strike&gt; &lt;/strike&gt;</td>
+                <td>Ce mot est barré: <strike>TEXT</strike></td> <!-- bar du text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;strong&gt; &lt;/strong&gt;</td>
+                <td>Ce mot est en gras: <strong>TEXT</strong></td> <!-- bar du text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;sub&gt; &lt;/sub&gt; &lt;sup&gt; &lt;/sup&gt;</td>
+                <td>Exemple : <sub>sub</sub> et <sup>sup</sup></td> <!-- text haut et bas -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/svg&gt; &lt;svg&gt;</td>
+                <td><svg width="100" height="100">
+                    <rect x="5" y="5"  width="100" height="100" fill="blue"/>
+                </svg></td> <!-- créée une zone de dessin -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/table&gt; &lt;table&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/td&gt; &lt;td&gt;</td>
+                <td>Cesbalises sont utilisées sur toute la longueur de cette page Web.</td> <!-- Tableau -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/tbody&gt; &lt;tbody&gt; &lt;/thead&gt; &lt;thead&gt; &lt;/tfoot&gt; &lt;tfoot&gt;</td>
+                <td>Ces balises utilises le même principe que le code d'une page HTML avec le HEAD le BODY et le FOOT.</td> <!-- Tableau géré de manière différente -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/template&gt; &lt;template&gt;</td>
+                <td>Sert à cacher des éléments.</td> <!-- éléments caché réafichable avec du js -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/textarea&gt; &lt;textarea&gt;</td>
+                <td><textarea rows="2" cols="50">
+                   Zone de text de 2 lignes de haut et 50 caractères de large.
+                </textarea></td> <!-- zone de text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;/title&gt; &lt;title&gt;</td>
+                <td>Titre que l'onglet ouvert aura.</td> <!-- titre de la pabe web -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;track&gt;</td>
+                <td>Ajoute des sous-titres à une vidéo.</td> <!-- sous titres -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;u&gt; &lt;/u&gt;</td>
+                <td>Sous ligne un <u>mot</u>.</td> <!-- sous titres -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;var&gt; &lt;/var&gt;</td>
+                <td><var>Style de text.</var></td> <!-- style de text -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;video&gt; &lt;/video&gt;</td>
+                <td><video width="320" height="180"controls >
+                    <source src="../images/fofo.mp4" type="video/mp4">
+                  </video></td> <!-- Affiche une vidéo -->
+            </tr>
+            <tr>
+                <td class="presentation">&lt;wbr&gt;</td>
+                <td>Sert à couper un mot lorsqu'il est très long comme celui-ci: anticonstitutionnel<wbr>lement. </td> <!-- sert a rien -->
             </tr>
         </table>
 
