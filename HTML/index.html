@@ -10,6 +10,30 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <div class="manavbar">
+            <nav>
+            <ul>
+                <li><a href="../HTML/index.html">HTML</a></li>
+                <li><a>CSS</a></li></li>
+                <li><a href="#iframe">go to test</a></li>
+                <li class="searchright">
+                    <form method="get">
+                        <div class="search">
+                           <input type="text" class="searchTerm" placeholder="Recherche" list="fonctionne">
+                           <datalist id="fonctionne"> 
+                            <option value="iframe" href="#iframe"></option>   
+                            <option value="form" href="#form"></option>   
+                            <option value="img" href="#img"></option>   
+                          </datalist>
+                           <button type="submit"  class="searchButton">
+                             <img src="../images/loupe.png">
+                          </button>
+                    </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        </div>
         <h1> Les balises les plus importantes de l'HTML </h1>
         <table>
             <tr>
@@ -112,11 +136,11 @@
             <tr>
                 <td class="presentation">&lt;datalist&gt;  &lt;/datalist&gt;</td>
                 <td>
-                    <form action="/action_page.php" method="get">
+                    <form action="" method="get">
                         <input list="Valeurs" name="browser">
                         <datalist id="Valeurs">
-                          <option value="Valeur 1">
-                          <option value="Valeur 2">
+                          <option action="#test">
+                          <option action="#img">
                           <option value="Valeur 3">
                           <option value="Valeur 4">
                           <option value="Valeur 5">
@@ -189,7 +213,7 @@
                 <td class="presentation">&lt;footer&gt;  &lt;/footer&gt;</td>
                 <td>Permet de coder le bas de la page web.</td> <!-- Footer-->
             </tr>
-            <tr>
+            <tr id="form">
                 <td class="presentation">&lt;form&gt;  &lt;/form&gt;</td>
                 <td>
                     <form method="POST" >
@@ -250,11 +274,11 @@
                 <td class="presentation">&lt;i&gt;  &lt;/i&gt;</td>
                 <td><i>Voici un text en italique.</i></td> <!-- text en italique-->
             </tr>
-            <tr>
+            <tr id="iframe">
                 <td class="presentation">&lt;iframe&gt;  &lt;/iframe&gt;</td>
                 <td><iframe src="http://leophilip.com/"></iframe></td> <!-- Frame dans laquel on peut mettre par exemple un site internet-->
             </tr>
-            <tr>
+            <tr id="img">
                 <td class="presentation">&lt;img&gt;</td>
                 <td><img src="../images/isoka.jpg" height="30%" width="30%"></td> <!-- insertion d'image-->
             </tr>
@@ -573,5 +597,6 @@
               </div>
             </div>
           </div>
+          <div id="test">test</div>
     </body>
 </html>
