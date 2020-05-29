@@ -39,10 +39,20 @@
             <tr>
                 <th>Balise</th>
                 <th>Résultat</th>
+                <th>Attributs</th>
             </tr>
             <tr>
                 <td class="presentation">&lt;a&gt;  &lt;/a&gt;</td>
                 <td><p>Transfère de page web à une autre: <a href="https://leophilip.com/">leophilip.com</a></p></td>  <!-- Hypertext link-->
+                <td><details>
+                        <p>Download: permet de faire télécharger un fichier grace à un lien hypertext</p>
+                        <p>href: permet de renvoyer sur une autre page web)</p>
+                        <p>hreflang: indique la lange du document</p>
+                        <p>media: induque quel navigateur ou logiciel est le plus adapté au lien donné</p>
+                        <p>rel: indique la relation entre le document/site actuel et celui du liens</p>
+                        <p>target: indique ou ouvrir le lien (ex: _blank pour ouvrir dans un autre onglet)</p>
+                        <p>type: induque le type du document linké</p>
+                    </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;abbr&gt;  &lt;/abbr&gt;</td>
@@ -72,6 +82,14 @@
                 <td><audio controls>
                     <source src="../audio/ouch.mp3">
                 </audio></td>  <!-- Mettre un audio -->
+                <td><details>
+                    <p>autoplay: lance l'audio au chargement de la page web</p>
+                    <p>controls: affiche les bouttons play/pause ...</p>
+                    <p>loop: lance l'audio en boucle</p>
+                    <p>muted: enlève l'audio de l'audio (sert a rien)</p>
+                    <p>preload: indique de quelle façon l'audio doit être chargé</p>
+                    <p>src: indique l'url de l'audio</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;b&gt;  &lt;/b&gt;</td>
@@ -81,15 +99,23 @@
                 <td class="presentation">&lt;base&gt;</td>
                 <td>Lien vers le site: <!-- <base href="https://leophilip.com/"> -->
                     <a href="https://leophilip.com/">leophilip.com</a></td>  <!-- Mettre une url en url de base sans avoir besoin de la réécrire-->
+                <td><details>
+                    <p>href: sert à donner l'url du site vers lequel on veut que l'utilisateur soit redirigé </p>
+                    <p>target: indique ou ouvrir le lien (ex: _blank pour ouvrir dans un autre onglet)</p>
+                </details></td>    
             </tr>
             <tr>
                 <td class="presentation">&lt;bdo&gt; &lt;/bdo&gt;</td>
                 <td><bdo dir="rtl">Le texte est écrit de la droite vers la gauche.</bdo><br>Le texte est écrit de la droite vers la gauche.</td> <!-- sens décriture changé -->
+                <td><details>
+                    <p>dir: indique la direction du text (ltr/rtl)</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;blockquote&gt; &lt;/blockquote&gt;</td>
                 <td><p>D'après le site wordreference:</p>
                 <blockquote cite="https://www.wordreference.com/fren/monde">Le mot "Monde" s'écrit "Word" en anglais.</blockquote></td> <!-- saut de lignes -->
+                <td><details><p>cite: indique l'url de la source</p></details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;body&gt; &lt;/body&gt;</td>
@@ -102,6 +128,19 @@
             <tr>
                 <td class="presentation">&lt;button&gt; &lt;/button&gt;</td>
                 <td><button type="button" onclick="alert('Vous avez cliqué sur le boutton')">Cliquez ici!</button></td> <!-- créer un boutton -->
+                <td><details>
+                    <p>autofocus: focus le boutton au chargement de la page</p>
+                    <p>disable: désactive le boutton</p>
+                    <p>form: indique le formulaire auquel il est relié</p>
+                    <p>formaction: indique à quelle url renvoyé les information du formulaire (uniquement pour le type submit)</p>
+                    <p>formenctype: indique sous quelle forme les informations du formulaire sont envoyé (uniquement pour le type submit)</p>
+                    <p>formmethod: indique la méthode d'evoie des données du formulaire (get/post) (uniquement pour le type submit)</p>
+                    <p>formnovalidate: renvoie l'information que le formulaire est pas validé (uniquement pour le type submit)</p>
+                    <p>formtarget: indique ou renvoyé l'utilisateur après l'envoie du formulaire (uniquement pour le type submit)</p>
+                    <p>name: indique le nom du boutton</p>
+                    <p>type: indique me type du boutton (submit, reset, button)</p>
+                    <p>value: valeur initiale du boutton</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;caption&gt; &lt;/caption&gt;</td>
@@ -132,6 +171,7 @@
             <tr>
                 <td class="presentation">&lt;data&gt;  &lt;/data&gt;</td>
                 <td><p><data value="78563">Attribution d'une valeur à un text.</data></p></td> <!-- donner une valeur a un text-->
+                <td><details><p>value: sert a donner une valeur à une donnée</p></details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;datalist&gt;  &lt;/datalist&gt;</td>
@@ -163,6 +203,10 @@
             <tr>
                 <td class="presentation">&lt;del&gt;  &lt;/del&gt;</td>
                 <td>Voici du text <del>barré</del>.</td> <!-- Barre du text-->
+                <td><details>
+                    <p>cite: url qui explique pourquoi le text est barré</p>
+                    <p>datetime: date et heure à la quelle le text a été barré</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;details&gt;  &lt;/details&gt; &lt;summary&gt;  &lt;/summary&gt;</td>
@@ -173,10 +217,12 @@
                         <p>Deuxième paragraphe</p>
                       </details>
                 </td> <!-- Afficher ou cacher du text-->
+                <td><details><p>open: ouvre la description est de base</p></details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;dialog&gt;  &lt;/dialog&gt;</td>
                 <td><dialog open>Ceci est une boite de dialogue ouverte.</dialog></td> <!-- boite de dialogue-->
+                <td><details><p>open: ouvre la boite de dialogue</p></details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;div&gt;  &lt;/div&gt;</td>
@@ -194,6 +240,12 @@
             <tr>
                 <td class="presentation">&lt;em&gt;  &lt;/em&gt;</td>
                 <td><em>Voici un text en italique.</em></td> <!-- text en italique-->
+                <td><details>
+                    <p>height: indique le nombre de pixel de longueur</p>
+                    <p>width: pareil pour la largeur</p>
+                    <p>src: url du document à intégrer</p>
+                    <p>type: indique le type du document</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;embed&gt;</td>
@@ -201,13 +253,18 @@
             </tr>
             <tr>
                 <td class="presentation">&lt;fieldset&gt;  &lt;/fieldset&gt; &lt;figure&gt;  &lt;/figure&gt;</td>
-                <td><figure>
+                <td><fieldset><figure>
                     <audio controls>
                         <source src="../audio/ouch.mp3">
                     </audio>
                     <figcaption>Description de l'élément.</figcaption>
-                </figure> <!-- description d'élément-->
+                </figure></fieldset> <!-- description d'élément-->
                 </td>
+                <td><details>
+                    <p>disable: le fieldset est pas montré</p>
+                    <p>form: indique à quel formulaire il est linké</p>
+                    <p>name: nom du fieldset</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;footer&gt;  &lt;/footer&gt;</td>
@@ -229,6 +286,16 @@
                         </div>
                     </form>
                 </td> <!-- En voie de donnée dans une page php-->
+                <td><details>
+                    <p>action: indique à quelle url les données sont envoyées</p>
+                    <p>autocomplete: remplissage automatique on/off</p>
+                    <p>enctype: indique sous quelle forme les informations du formulaire sont envoyé </p>
+                    <p>method: indique la méthode d'evoie des données du formulaire (get/post)</p>
+                    <p>name: nom du formulaire</p>
+                    <p>notvalidate: le formulaire n'est pas valide à l'envoie</p>
+                    <p>rel: indique la relation entre le document/site actuel et celui du liens</p>
+                    <p>target: indique ou ouvrir le lien (ex: _blank pour ouvrir dans un autre onglet)</p>
+                </details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;h1&gt;  &lt;/h1&gt;</td>
@@ -269,6 +336,7 @@
             <tr>
                 <td class="presentation">&lt;html&gt;  &lt;/html&gt;</td>
                 <td>Entre ces balise, le document sera en language HTML5.</td> <!-- Document HTML5-->
+                <td><details><p>xmlns: Spécifie l'attribut d'espace de noms XML (si vous avez besoin que votre contenu soit conforme à XHTML)</p></details></td>
             </tr>
             <tr>
                 <td class="presentation">&lt;i&gt;  &lt;/i&gt;</td>

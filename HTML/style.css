@@ -130,3 +130,6 @@ input::-webkit-calendar-picker-indicator {
 .seach datalist{
   opacity: 0%;
 }
+fieldset{
+  background-color: rgb(126, 126, 126);
+}
